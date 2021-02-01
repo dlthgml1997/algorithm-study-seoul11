@@ -12,7 +12,7 @@ SSAFY 과제와 선정한 알고리즘 문제를 풀고, 풀이 방법을 공유
 - 세션 당 휴식시간 10분을 원칙으로 하며, 아래의 순서대로 진행됩니다!
 - 캠`ON` (회의, 브리핑, 코드리뷰, 브레이크타임엔 마이크 전원 ON)
 
-1️⃣ **SSAFY 과제, 워크샵ㄷ
+1️⃣ **SSAFY 과제, 워크샵**
 
 매일 주어지는 과제 & 워크샵을 풀어갑니다.  
 세션 시작 전에 시간을 정하고, 각자 해결합니다.  
@@ -80,7 +80,9 @@ SSAFY 과제와 선정한 알고리즘 문제를 풀고, 풀이 방법을 공유
 
 8. ```bash
    # 입력
-   $ git pull origin master # 꼭 필요한 과정은 아닙니다. 어차피 master에는 README.md만 있기 때문입니다.
+   $ git pull origin master 
+   # 꼭 필요한 과정은 아닙니다. 어차피 master에는 README.md만 있기 때문입니다.
+   # 근데 안하면 뭔가 불안함
    # 결과
    remote: Enumerating objects: 3, done.
    remote: Counting objects: 100% (3/3), done.
@@ -89,9 +91,9 @@ SSAFY 과제와 선정한 알고리즘 문제를 풀고, 풀이 방법을 공유
    Unpacking objects: 100% (3/3), done.
    From https://github.com/SSAFY-SEOUL11/algorithm-study-seoul11
     * branch            master     -> FETCH_HEAD
-    * [new branch]      master     -> origin/master
+ * [new branch]      master     -> origin/master
    ```
-
+   
 9. `git pull origin master `를 입력하고 나면, ssafy-study 디렉토리에 README.md 가 생깁니다. 앞으로도 `master`에는 `README.md` 파일만 있을 것이고, 각자의 코드는 각자의 branch 에 넣습니다.
 
 10. 이제 컨벤션을 잘 지킨 채 코딩을 열심히 했다는 가정 하에, 다음과 같이 파일들이 생겼습니다.![image-20210201233330921](C:\Users\sim\AppData\Roaming\Typora\typora-user-images\image-20210201233330921.png)
