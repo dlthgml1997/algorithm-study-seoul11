@@ -52,7 +52,7 @@ SSAFY 과제와 선정한 알고리즘 문제를 풀고, 풀이 방법을 공유
 
 2. Project Explorer 우클릭 - New - Project - Java Project 로 프로젝트 생성합니다. 저는 이름을 ssafy-study 로 했습니다.
 
-   ![image-20210201233809538](C:\Users\sim\AppData\Roaming\Typora\typora-user-images\image-20210201233809538.png)
+   ![image-20210201233809538](https://user-images.githubusercontent.com/44252639/106478988-25d9f580-64ed-11eb-8295-edaf832a516b.png)
 
    (어쩌다보니 저따구로 만들어졌네요..)
 
@@ -91,12 +91,11 @@ SSAFY 과제와 선정한 알고리즘 문제를 풀고, 풀이 방법을 공유
    Unpacking objects: 100% (3/3), done.
    From https://github.com/SSAFY-SEOUL11/algorithm-study-seoul11
     * branch            master     -> FETCH_HEAD
- * [new branch]      master     -> origin/master
+    [new branch]      master     -> origin/master
    ```
-   
 9. `git pull origin master `를 입력하고 나면, ssafy-study 디렉토리에 README.md 가 생깁니다. 앞으로도 `master`에는 `README.md` 파일만 있을 것이고, 각자의 코드는 각자의 branch 에 넣습니다.
 
-10. 이제 컨벤션을 잘 지킨 채 코딩을 열심히 했다는 가정 하에, 다음과 같이 파일들이 생겼습니다.![image-20210201233330921](C:\Users\sim\AppData\Roaming\Typora\typora-user-images\image-20210201233330921.png)
+10. 이제 컨벤션을 잘 지킨 채 코딩을 열심히 했다는 가정 하에, 다음과 같이 파일들이 생겼습니다.![image-20210201233330921](https://user-images.githubusercontent.com/44252639/106479049-3a1df280-64ed-11eb-8bec-b52f014b9c54.png)
 
 11. 이제 다시 `ssafy-study` 폴더를 열고, git bash 를 다시 엽니다.
 
@@ -167,7 +166,9 @@ SSAFY 과제와 선정한 알고리즘 문제를 풀고, 풀이 방법을 공유
 
 7. [우리의 repo](https://github.com/SSAFY-SEOUL11/algorithm-study-seoul11) 에 들어가서 해당 부분을 클릭하면, 다른 사람들이 추가했던 브랜치 및 자신의 브랜치가 보일 것입니다.
 
-![image-20210202001150175](C:\Users\sim\AppData\Roaming\Typora\typora-user-images\image-20210202001150175.png)
+   ![image-20210202001110384](https://user-images.githubusercontent.com/44252639/106479243-72253580-64ed-11eb-8863-af16bbc00d6e.png)
+
+![image-20210202001150175](https://user-images.githubusercontent.com/44252639/106479297-879a5f80-64ed-11eb-97a7-f8daf44865fd.png)
 
 8 전환하면, master 에는 없었던 mon02/... 이 보입니다. 제가 작업했던 코드임을 알 수 있습니다. 같은 방법으로 다른 사람의 브랜치에 들어가서 코드를 볼 수 있습니다.
 
