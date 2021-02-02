@@ -21,7 +21,7 @@ public class Boj2164 {
 			q.add(q.peek());
 			q.remove();
 		}
-		
+	
 		System.out.println(q.peek());
 	}
 
