@@ -18,7 +18,7 @@ public class Boj1966 {
 		while (true) {
 			int x = q.peek()[0];
 			int idx = q.peek()[1];
-
+			
 			q.remove();
 			if (x != maxp)
 				q.add(new int[] { x, idx });
