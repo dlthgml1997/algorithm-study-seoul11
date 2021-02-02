@@ -12,7 +12,7 @@ public class Boj10845 {
 	static StringBuffer sb = new StringBuffer();
 	static Queue<Integer> q = new LinkedList<>();
 	static int N, last;
-
+	
 	static void push(int x) {
 		q.add(x);
 	}
