@@ -147,7 +147,7 @@ SSAFY 과제와 선정한 알고리즘 문제를 풀고, 풀이 방법을 공유
    ```
 
 5. ```bash
-   $ git push origin simju1001-심정욱
+   $ git push origin simju1001-심정욱 # 반드시 자기 브랜치로 push 해야 합니다!!
    Enumerating objects: 7, done.
    Counting objects: 100% (7/7), done.
    Delta compression using up to 12 threads
