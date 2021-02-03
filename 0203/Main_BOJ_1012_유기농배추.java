@@ -1,8 +1,6 @@
 import java.io.*;
 import java.util.*;
 
-// 30mins
-
 public class Main_BOJ_1012_유기농배추 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static StringTokenizer st;
