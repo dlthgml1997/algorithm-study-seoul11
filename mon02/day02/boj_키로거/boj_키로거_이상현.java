@@ -20,59 +20,33 @@ public class boj_키로거_이상현 {
 		int tc = 0;
 		
 		while(tc++ < T) {
-			Deque<Character> q = new ArrayDeque<>();
-			Deque<Character> temp = new ArrayDeque<>();
+			Deque<Character> left = new ArrayDeque<>();
+			Deque<Character> right = new ArrayDeque<>();
 			char[] arr = br.readLine().toCharArray();
 			int len = arr.length;
 			int idx = 0;
 			
 			for(int i = 0; i < len; i++) {
-				int size = q.size();
-				
-				if(arr[i] == '<')  // 왼쪽으로 이동
-					idx = idx == 0 ? idx : idx-1; 
-				
-				else if(arr[i] == '>') // 오른쪽으로 이동
-					idx = idx < q.size() ? idx+1 : idx;	
-				
-				else if(arr[i] == '-') {
-					if(idx >= size/2) { // 오른쪽을 빼기 (len-idx 만큼)
-						for(int j = idx+1; j < size; j++) 
-							temp.addLast(q.pollLast());
-						q.pollLast();
-						for(int j = idx+1; j < size; j++) 
-							q.addLast(temp.pollFirst());
-					}
-					else { // 왼쪽으로 빼기 (idx만큼)
-						for(int j = 0; j < idx; j++) 
-							temp.addLast(q.pollFirst());
-						q.pollFirst();
-						for(int j = 0; j < idx; j++) 
-							q.addFirst(temp.pollLast());
-					}
-					idx = idx == 0 ? idx : idx-1; 
+				if(arr[i] == '<') {   // 원래 있던 값 오른쪽으로 이동
+					if(!left.isEmpty()) right.addFirst(left.pollLast());
 				}
-				else {// 알파벳
-					if(idx > size/2) { // 오른쪽을 빼기 (len-idx 만큼)
-						for(int j = idx+1; j < size; j++) 
-							temp.addLast(q.pollLast());
-						q.addLast(arr[i]);
-						for(int j = idx+1; j < size; j++) 
-							q.addLast(temp.pollFirst());
-					}
-					else { // 왼쪽으로 빼기 (idx만큼)
-						for(int j = 0; j < idx; j++) 
-							temp.addLast(q.pollFirst());
-						q.addFirst(arr[i]);
-						for(int j = 0; j < idx; j++) 
-							q.addFirst(temp.pollLast());
-					}
-					idx = idx < q.size() ? idx+1 : idx;				
+				else if(arr[i] == '>') {// 원래 있던 값 왼쪽으로 이동
+					if(!right.isEmpty()) left.addLast(right.pollFirst());
 				}
+				else if(arr[i] == '-') { // 현재 커서의 앞에있는 알파벳 삭제
+					if(!left.isEmpty()) left.pollLast();
+				}
+				else // 알파벳
+					left.addLast(arr[i]);		
+				
 			}
-					
-			for(Character c : q) 
+			while(!right.isEmpty()) { // 한쪽으로 모으기
+				left.addLast(right.pollFirst());
+			}
+			
+			for(Character c : left) 
 				sb.append(c);
+
 			sb.append("\n");
 		}	
 		System.out.print(sb);
