@@ -1,4 +1,4 @@
-package mon02.day02;
+package mon02.day02.boj_덱;
 
 import java.io.BufferedReader;
 import java.io.IOException;
