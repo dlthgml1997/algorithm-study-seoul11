@@ -1,4 +1,4 @@
-package mon02.day02;
+package mon02.day02.boj_풍선터뜨리기;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
