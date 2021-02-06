@@ -1,4 +1,4 @@
-package mon2.day3.boj_늑대와양;
+package mon2.day03.boj_늑대와양;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package mon2.day3.boj_바이러스;
+package mon2.day03.boj_바이러스;
 
 import java.io.BufferedReader;
 import java.io.IOException;

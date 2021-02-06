@@ -1,4 +1,4 @@
-package mon2.day3.boj_유기농배추;
+package mon2.day03.boj_유기농배추;
 
 import java.io.BufferedReader;
 import java.io.IOException;
